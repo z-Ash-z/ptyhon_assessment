@@ -34,7 +34,7 @@ Write a publisher and subscriber node in ROS2 Humble. The requirements are as fo
     ```
 - Clone the git from the main branch.
     ```
-    git clone https://github.com/z-Ash-z/ptyhon_assessment.git
+    git clone https://github.com/z-Ash-z/python_assessment.git
     ```
 - Change directory to the workspace folder and source `ROS Humble`.
     ```
