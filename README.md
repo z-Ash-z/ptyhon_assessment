@@ -72,3 +72,14 @@ Write a publisher and subscriber node in ROS2 Humble. The requirements are as fo
     > Use the parameter `file_name:=GPS_Dataset.csv` to choose amoungst the CSV files that are in the [data folder](/assessment_ros/gps_data_manipulation/data/). Add other files to this folder before building.
 
 
+## Running tests
+- From the workspace folder run the test command.
+    ```
+    colcon test --pytest-with-coverage
+    ```
+    > The `--pytest-with-coverage` flag will give us the coverage report that can be use in the GitHubCI. Find the `index.html` in the build folder to see the detailed report.
+
+- You can see the results in the console while the test is running and also by using result command.
+    ```
+    colcon test-result
+    ```
