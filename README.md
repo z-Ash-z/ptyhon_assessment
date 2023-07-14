@@ -49,7 +49,7 @@ Write a publisher and subscriber node in ROS2 Humble. The requirements are as fo
     ```
 
 #### Running the publisher node
-- Running the publisher. By default it runs using the [Test CSV file](/src/assessment_ros/gps_data_manipulation/data/GPS_Dataset_test.csv).
+- Running the publisher. By default it runs using the [Test CSV file](/assessment_ros/gps_data_manipulation/data/GPS_Dataset_test.csv).
     ```
     ros2 run gps_data_manipulation data_read
     ```
@@ -69,6 +69,6 @@ Write a publisher and subscriber node in ROS2 Humble. The requirements are as fo
     ```
     ros2 launch gps_data_manipulation pub_sub.launch.py
     ```
-    > Use the parameter `file_name:=GPS_Dataset.csv` to choose amoungst the CSV files that are in the [data folder](/src/assessment_ros/gps_data_manipulation/data/). Add other files to this folder before building.
+    > Use the parameter `file_name:=GPS_Dataset.csv` to choose amoungst the CSV files that are in the [data folder](/assessment_ros/gps_data_manipulation/data/). Add other files to this folder before building.
 
 
