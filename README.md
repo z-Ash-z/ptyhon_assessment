@@ -1,5 +1,7 @@
 # Programming Challenge : ROS2
-
+[![Build](https://github.com/z-Ash-z/python_assessment/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/z-Ash-z/python_assessment/actions/workflows/build_and_coveralls.yml)
+[![codecov](https://codecov.io/gh/z-Ash-z/python_assessment/branch/main/graph/badge.svg?token=Z4YokXrnl5)](https://codecov.io/gh/z-Ash-z/python_assessment)
+---
 ## Problem statement
 Write a publisher and subscriber node in ROS2 Humble. The requirements are as follows:
 1. The publisher should read this CSV file and publish each row as a separate message to a topic named “data” at a rate of 3 Hz. You only need to publish the Longitude, Latitude, Altitude, Time and Actual_Speed columns for the purpose of this assignment. You will need to create a custom message which encapsulates all these columns but the exact implementation of the message is left up to you. 
