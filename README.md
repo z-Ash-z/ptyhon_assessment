@@ -3,6 +3,7 @@
 ## Problem statement
 Write a publisher and subscriber node in ROS2 Humble. The requirements are as follows:
 1. The publisher should read this CSV file and publish each row as a separate message to a topic named “data” at a rate of 3 Hz. You only need to publish the Longitude, Latitude, Altitude, Time and Actual_Speed columns for the purpose of this assignment. You will need to create a custom message which encapsulates all these columns but the exact implementation of the message is left up to you. 
+
 2.	The subscriber should then read each message and compute the difference between subsequent data points in the “Time” column and publish that as a float to the “diff” topic. While you may not use the “Time_diff” column directly, you can use it to test out your code. For example for three consecutive messages as below,
     ```
     MSG 1: -105.434187,41.233283,2606.7,2014-07-26 13:03:55+00:00
@@ -11,6 +12,7 @@ Write a publisher and subscriber node in ROS2 Humble. The requirements are as fo
     ```
     The subscriber node should be able to compute the difference and publish the numbers 3.0(time difference between 1 & 2) and 17.0(time difference between 2 & 3) to “diff”.
 3.	Please make sure you also use the ROS2 testing framework to write test cases for your publisher and subscriber nodes to see whether they perform as expected. We do not require an integration test to be written for the whole system, just 2 unit tests for the publisher and subscriber nodes respectively. 
+
 4.	Please add a README file documenting the requirements for this project as well as instructions on how to run it.
 
 ## Solution
